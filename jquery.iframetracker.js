@@ -138,7 +138,7 @@
 		// Target mouseover event listener
 		mouseoverListener: function(e){
 			e.data.handler.over = true;
-			try {e.data.handler.overCallback(this);} catch(ex) {}
+			try {e.data.handler.overCallback(this, e);} catch(ex) {}
 		},
 		
 		// Target mouseout event listener
